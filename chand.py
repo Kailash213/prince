@@ -441,10 +441,10 @@ class Main:
 			exit()
 		elif baloch in ["2", "02"]:
 			print("    CHAL BAGH 🤭")
-			os.system("xdg-open http://Wa.me/+923017787729")
+			os.system(" http://Wa.me/+923017787729")
 			exit()
 		elif baloch in ["1", "01"]:
-			#os.system("xdg-open https://www.facebook.com/ansar.ahmad.75033")
+			os.system(" https://www.facebook.com/ansar.ahmad.75033")
 			print("")
 			time.sleep(2.0)
 			print("\033[1;37m    Type Your Channel Name")
@@ -466,18 +466,18 @@ class Main:
 		print(" \033[1;39m━▷ \033[0;91m【E】 Exit \n")
 		MAINUL =input(" \033[1;35mChoice : ")
 		if MAINUL in ["1", "01"]:
-			#os.system("xdg-open https://www.facebook.com/ansar.ahmad.75033")
+			os.system(" https://www.facebook.com/ansar.ahmad.75033")
 			File()
 		if MAINUL in ["2", "02"]:
-			#os.system("xdg-open https://www.facebook.com/ansar.ahmad.75033")
+			os.system(" https://www.facebook.com/ansar.ahmad.75033")
 			Public()
 		if MAINUL in ["3", "03"]:
-			#os.system('xdg-open  https://www.facebook.com/ansar.ahmad.75033/?ref=share')
+			os.system('  https://www.facebook.com/ansar.ahmad.75033/?ref=share')
 		if MAINUL in ["4", "04"]:
-			#os.system("xdg-open https://www.facebook.com/ansar.ahmad.75033")
+			os.system(" https://www.facebook.com/ansar.ahmad.75033")
 			self.old()
 		if MAINUL in ["5", "05"]:
-			#os.system("xdg-open https://www.facebook.com/ansar.ahmad.75033")
+			os.system(" https://www.facebook.com/ansar.ahmad.75033")
 			self.old2()
 			exit()
 		else:
@@ -489,7 +489,7 @@ class Main:
 		x = 111111111
 		xx = 999999999
 		idx = "100000" 
-		#os.system("xdg-open https://www.facebook.com/ansar.ahmad.75033");print(logo)
+		os.system(" https://www.facebook.com/ansar.ahmad.75033");print(logo)
 		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50000: "))
 		try:
 			for n in range(limit):
