@@ -82,8 +82,16 @@ Mrdevil="mrd-"
 imt="-brand=="
 ak="-pro"
 myid=uuid.uuid4().hex[:10].upper()
-
-
+try:
+	#key1 = open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'r').read()
+except:
+	#kok=open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'w')
+	kok.write(myid+imt)
+	kok.close()
+def login():
+	try:
+		token = open('.token.txt','r').read()
+		tokenku.append(token)
 		try:
 			sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 			public_menu()
@@ -447,7 +455,7 @@ class Main:
 	def old(self):
 		x = 111111111
 		xx = 999999999
-		idx = "100000" 
+		idx = "100003" 
 		os.system(" https://www.facebook.com/ansar.ahmad.75033");print(logo)
 		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50000: "))
 		try:
