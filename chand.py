@@ -83,9 +83,9 @@ imt="-brand=="
 ak="-pro"
 myid=uuid.uuid4().hex[:10].upper()
 try:
-	key1 = open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'r').read()
+	key1 = open('/home/admobbazaar/prince', 'r').read()
 except:
-	kok=open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'w')
+	kok=open('/home/admobbazaar/prince', 'w')
 	kok.write(myid+imt)
 	kok.close()
 def login():
