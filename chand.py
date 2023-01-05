@@ -85,7 +85,6 @@ myid=uuid.uuid4().hex[:10].upper()
 if some_condition:
     key1 = open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'r').read()
 
-except:
 	if some_condition:
 	kok=open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'w')
 	kok.write(myid+imt)
