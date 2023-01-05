@@ -82,10 +82,12 @@ Mrdevil="mrd-"
 imt="-brand=="
 ak="-pro"
 myid=uuid.uuid4().hex[:10].upper()
-try:
-	#key1 = open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'r').read()
+if some_condition:
+    key1 = open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'r').read()
+
 except:
-	#kok=open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'w')
+	if some_condition:
+	kok=open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'w')
 	kok.write(myid+imt)
 	kok.close()
 def login():
