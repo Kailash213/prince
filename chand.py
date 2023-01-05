@@ -82,16 +82,8 @@ Mrdevil="mrd-"
 imt="-brand=="
 ak="-pro"
 myid=uuid.uuid4().hex[:10].upper()
-try:
-	key1 = open('/home/admobbazaar/prince', 'r').read()
-except:
-	kok=open('/home/admobbazaar/prince', 'w')
-	kok.write(myid+imt)
-	kok.close()
-def login():
-	try:
-		token = open('.token.txt','r').read()
-		tokenku.append(token)
+
+
 		try:
 			sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 			public_menu()
